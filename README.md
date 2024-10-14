@@ -28,21 +28,4 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
  `git push`
  
-
-
-
-       
- ```markdown
- mkdir MarketPeak_Ecommerce
-
- cd MarketPeak_Ecommerce
-
- git init
-
- git add .
-
- git commit -m "...."
- 
- git push
- ```
  
