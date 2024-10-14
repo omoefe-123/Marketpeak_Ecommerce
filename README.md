@@ -28,4 +28,11 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
  `git push`
  
+ ## 1.2. Obtain and prepare the E-commerce Website Template
+ I obtained and prepared a pre-existing e-commerce website template
+ ![Html-Template](Images/html-template.jpg)
+ ![Template-download](Images/Template-download.jpg)
+
+ I obtained also the url
+ [Template](https://www.tooplate.com/view/2130-waso-strategy)
  
