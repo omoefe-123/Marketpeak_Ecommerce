@@ -31,6 +31,7 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
  ## 1.2. Obtain and prepare the E-commerce Website Template
  I obtained and prepared a pre-existing e-commerce website template
  ![Html-Template](Images/html-template.jpg)
+ I downloaded a Website Template by visiting (Tooplate)
  ![Template-download](Images/Template-download.jpg)
 
  I obtained also the url
