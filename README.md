@@ -12,17 +12,18 @@ In this project I will be developing an e-commerce website for a new online mark
 ## 1.1. Initialize Git Repository
 ![repositry-withou-a-README.md](Images/creating-repo.jpg)
 
-        I created a project directory or folder and named it "Marketpeak_Ecommerce using vscode
-        cli i used the following command 
-        `git init`
-        `git add .`
-        `git commit -m "...."`
-        `git push`
 ![git-command](Images/git-command.jpg)
 
-`mkdir MarketPeak_Ecommerce
-cd MarketPeak_Ecommerce
-git init`
+I created a project directory or folder and named it "Marketpeak_Ecommerce using vscode cli i used the following command
+
+ `mkdir MarketPeak_Ecommerce`
+ `cd MarketPeak_Ecommerce`
+
+ `git init`
+ `git add .`
+ `git commit -m "...."`
+ `git push`
+ 
 
 
 
