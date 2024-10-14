@@ -31,8 +31,9 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
 
 
-         
- `mkdir MarketPeak_Ecommerce
+       
+ ```markdown
+ mkdir MarketPeak_Ecommerce
 
  cd MarketPeak_Ecommerce
 
@@ -43,4 +44,5 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
  git commit -m "...."
  
  git push
- `
+ ```
+ 
