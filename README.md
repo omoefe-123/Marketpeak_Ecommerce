@@ -37,17 +37,18 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
  I obtained also the url
  [Template](https://www.tooplate.com/view/2130-waso-strategy)
  
- ## 2.2 Prepare the Website Template: 
- Extract the downloaded template into my project directory, marketpeak_Ecommerce                      
+ ## 1.2 Prepare the Website Template: 
+ Extract the downloaded template into my project directory,
+  marketpeak_Ecommerce  
+                    
 
-
-
-## 1.3. Stage and commit the Template tp Git
+## 1.3. Stage and commit the Template to Git
  ```git add .
  git config --global user.name "YourUsername"
  git config --global user.email "youremail@example. com"
  git commit -m "Initial commit with basic e-commerce  site structure"
  ```
  ## 1.4 Push the code to your Github repository
+
 ![zip-file](Images/2137_barista_cafe.jpg)
 
