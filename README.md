@@ -52,3 +52,28 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
 ![zip-file](Images/2137_barista_cafe.jpg)
 
+# 2. AWS Deployment
+## Task 2.1: Setup an AWS EC2 instance
+* Log into the AWS management Console.
+* Launch an EC2 Instance using an Amazon linux AMI
+* Connect to the instance using SSH
+
+![Launching-instance](Images/Lauching-linux-server.jpg)
+## 2.2. Clone the repository on the Linux Server
+  * Navigate to my repository in my github console
+  * i selected the `code` as highlighted in the image below
+  * Using HTTPS Method
+![HTTPS-method](Images/HTTPS-code.jpg)
+
+  ## Note: With AWS Linux, git is not preinstalled so i have to install it manually by using the following command
+  
+   `sudo yum istall git`
+   `git clone https://github.com/omoefe123/MarketPeak_Ecommerce.git`
+   
+![instaling-cloning-git](Images/clone-linux-server.jpg)
+
+
+
+
+
+
