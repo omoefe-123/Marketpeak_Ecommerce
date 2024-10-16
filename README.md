@@ -75,8 +75,20 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
    `git clone https://github.com/omoefe123/MarketPeak_Ecommerce.git`
    
  The image below shows the cloning interface on the cli
- 
+
 ![instaling-cloning-git](Images/clone-linux-server.jpg)
+
+# Task 3. Installing a Web Server on EC2
+ Using yum package manager for htttpd software
+ The below command was used to install Apache
+
+ `sudo yum update -y`
+
+`sudo yum install httpd -y`
+
+`sudo systemctl start httpd`
+
+`sudo systemctl enable httpd`
 
 
 
