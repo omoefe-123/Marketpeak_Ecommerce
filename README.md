@@ -90,8 +90,28 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
 `sudo systemctl enable httpd`
 
+## Task 4. Configure httpd for Website
+  
+  Prepare the Web Directory: Clear the default httpd web directory and copy MarketPeak Ecommerce website files to it.
+  The below command was used:
 
+ `sudo rm -rf /var/www/html/*`
 
+ `sudo cp -r ~/Marketpeak_Ecommerce/* /var/www/html/`
+ 
+  This is the out put image below
 
+  ![The-output-image](Images/prepare-web-directory.jpg)
+
+  To reload httpd, the following command was used to apply cganges
+
+  `sudo systemctl reload httpd`
+
+  Below is the output interface
+
+![Reload-httpd](Images/system-reloaded.jpg)
+  
+
+ 
 
 
