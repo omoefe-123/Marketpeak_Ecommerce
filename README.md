@@ -114,8 +114,30 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 ## Task 5 Access Website From Browser
   * With httpd configured and website files in place, Marketpeak Ecommerce platform is now live on the internet:
   * Open a web browser and access the public IP of your EC2 instace to view the deployed website.
+## Note: HTTP Port 80 was opened in AWS Security group
 
-  
+
+## Task 6 Continous Integration and Deployment Workflow 
+ * To ensure a smooth workflow for developing, testing and deploying my e-commerce platform follow this structured approach.
+ ### 1. Developing New Features and Fixes
+   Create a Develpoment Branch using the below command
+   `git branch development`
+
+   `git checkout development`
+
+![command](Images/git-command-interface.jpg)
+
+   * Version control With Git
+    Run the following command to stage, commit, and push to develpoment branch
+    
+    `git add .`
+
+    `git commit -m "Add new features or fix bugs"`
+
+    `git push origin development`
+
+
+
 
 
 
