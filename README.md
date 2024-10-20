@@ -115,7 +115,7 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
   * With httpd configured and website files in place, Marketpeak Ecommerce platform is now live on the internet:
   * Open a web browser and access the public IP of your EC2 instace to view the deployed website.
 
-  
+
 
 
 
