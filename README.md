@@ -138,9 +138,7 @@ s
     `git commit -m "Add new features or fix bugs"`
 
     `git push origin development`
-
-
-
+    
 
 
 
