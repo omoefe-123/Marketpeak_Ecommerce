@@ -5,7 +5,7 @@ Project Instructions:
 
 In this project I will be developing an e-commerce website for a new online marketplace named "MarketPeak." This platform will feature product listings, a shopping cart, and user authentication.To implement this project I will use Git for version control, the develpoment platform will be in a Linux environment, and deploy it on an AWS EC2 instance. You can find a suitable website template here to kickstart your development
 
-## Tasks
+## Tasks 1
 
 **1. Implement Version Control with Git**
 
@@ -52,7 +52,7 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
 ![zip-file](Images/2137_barista_cafe.jpg)
 
-# 2. AWS Deployment
+# Task 2. AWS Deployment
 ## Task 2.1: Setup an AWS EC2 instance
 * Log into the AWS management Console.
 * Launch an EC2 Instance using an Amazon linux AMI
@@ -78,7 +78,7 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
 ![instaling-cloning-git](Images/clone-linux-server.jpg)
 
-# Task 3. Installing a Web Server on EC2
+# 2.3. Installing a Web Server on EC2
  Using yum package manager for htttpd software
  The below command was used to install Apache
 
@@ -90,7 +90,7 @@ I created a project directory or folder and named it "Marketpeak_Ecommerce using
 
 `sudo systemctl enable httpd`
 
-## Task 4. Configure httpd for Website
+## 2.4. Configure httpd for Website
   
   Prepare the Web Directory: Clear the default httpd web directory and copy MarketPeak Ecommerce website files to it.
   The below command was used:
@@ -111,7 +111,7 @@ s
 
 ![Reload-httpd](Images/system-reloaded.jpg)
   
-## Task 5 Access Website From Browser
+## 2.5 Access Website From Browser
   * With httpd configured and website files in place, Marketpeak Ecommerce platform is now live on the internet:
   * Open a web browser and access the public IP of your EC2 instace to view the deployed website.
 ## Note: HTTP Port 80 was opened in AWS Security group
@@ -119,9 +119,9 @@ s
 ![](Images/Barista_cafe.jpg)
 
 
-## Task 6 Continous Integration and Deployment Workflow 
+## 3. Continous Integration and Deployment Workflow 
  * To ensure a smooth workflow for developing, testing and deploying my e-commerce platform follow this structured approach.
- ### 1. Developing New Features and Fixes
+ ### Step 1. Developing New Features and Fixes
    Create a Develpoment Branch using the below command
    
    `git branch development`
@@ -130,20 +130,57 @@ s
 
 ![command](Images/git-command-interface.jpg)
 
-   * Version control With Git
+   ### Step 2. Version control With Git
     Run the following command to stage, commit, and push to develpoment branch
 
-    `git add .`
+   `git add .`
 
-    `git commit -m "Add new features or fix bugs"`
+   `git commit -m "Add new features or fix bugs"`
 
-    `git push origin development`
-    
+   `git push origin development`
 
+   ### Step 3. Create a pull request and merging to main branch
+    created a pull request to merge the development branch into the main branch, this process is vital for code review and maintaining code quality
 
+    ![pr-image](Images/PR-image.jpg)
 
+  * Review and Merge the PR: Review the changes made for any potencial issues. Once satisfied, merge the pull the request into the main branch, incoporating the new features or fixes into the production codebase.
 
+   ![Add-new-features](Images/Making-change-image.jpg)
+
+`git checkout mian`
+
+`git merge development`
+
+![image](Images/Version-control-command.jpg)
+
+* Push the merged changes to Github: Ensure that your local main branch is now containing the updates,and pushed to the repository onGithub
+
+`git pull`
+
+`git push origin main`
+
+![image](Images/Version-control-command.jpg)
+
+### Step 4. Deploying updates to the Production Server
+* 4.1. Pull the latest changes on the server: SSH into you AWS EC2 instance where the production website is hosted. Navigate to the website `s directory and pull the latest changes from the main branch
+
+`git pull origin main`
+
+* 4.2. Restart the Web Server (if neccessary): Depending on the nature of the updates, you may need to restart the web server to apply the changes
+
+![images](Images/system-reloaded.jpg)
+
+`sudo rm -rf /var/www/html/*`
+
+`sudo cp -r ~/MarketPeak_Ecommerce/2137_barista_cafe/* /var/www/html/`
+
+`sudo systemctl reload httpd`
+
+### Step 5. Testing the New Changes
+ * Access the Website: Open a web broser and navigate to the public IO address of your EC2 instance. Testing the new features or fixes to ensure they work as expected in the live environment.
+ This workflow emphasises best pratices in software development and deployment, including branch management, code review through pull requests, and continuous integration/deployment strategies. by following these steps, you maintain a stable and up-to-date production environment for your e-commerce platform.
+
+ ![images](Images/2137_barista_caf-image-changes.jpg)
 
  
-
-
